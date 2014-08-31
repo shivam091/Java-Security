@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Base class for credential readers that handle credentials that can be
- * described as a byte array.
+ * described as a byte array. 
  *
  * @param <T>
  *            Type of credential handled by this class.

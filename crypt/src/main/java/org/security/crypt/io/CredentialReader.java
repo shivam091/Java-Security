@@ -6,7 +6,7 @@ import java.io.InputStream;
 import org.security.crypt.CryptException;
 
 /**
- * Reads a security credential (e.g. key, certificate) from a resource.
+ * Reads a security credential (e.g. key, certificate) from a resource. 
  *
  * @param <T>
  *            Type of credential to read.
