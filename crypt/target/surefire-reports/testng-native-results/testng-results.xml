@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="130" passed="128">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="21052" started-at="2014-09-01T16:49:05Z" finished-at="2014-09-01T16:49:26Z">
+    <groups>
+      <group name="encodeBase64">
+        <method signature="Base64FilterOutputStreamTest.testEncodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterOutputStreamTest@77b52d12]" name="testEncodeBase64" class="org.security.crypt.io.Base64FilterOutputStreamTest"/>
+      </group> <!-- encodeBase64 -->
+      <group name="cli">
+        <method signature="AsymmetricCliTest.testAsymmetricCli(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricCliTest@5315b42e]" name="testAsymmetricCli" class="org.security.crypt.asymmetric.AsymmetricCliTest"/>
+        <method signature="DigestCliTest.testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" class="org.security.crypt.digest.DigestCliTest"/>
+      </group> <!-- cli -->
+      <group name="x509">
+        <method signature="AttributeTypeAndValueTest.testToString(org.security.crypt.x509.types.AttributeTypeAndValue, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.AttributeTypeAndValueTest@2ef9b8bc]" name="testToString" class="org.security.crypt.x509.types.AttributeTypeAndValueTest"/>
+        <method signature="DNUtilsTest.testGetAttributeValue(java.io.File, org.security.crypt.x509.types.AttributeType, java.lang.String)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValue" class="org.security.crypt.x509.DNUtilsTest"/>
+        <method signature="DNUtilsTest.testGetAttributeValues(java.io.File, org.security.crypt.x509.types.AttributeType, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValues" class="org.security.crypt.x509.DNUtilsTest"/>
+        <method signature="ExtensionReaderTest.testReadAll(java.io.File, java.util.Map)[pri:0, instance:org.security.crypt.x509.ExtensionReaderTest@2c6a3f77]" name="testReadAll" class="org.security.crypt.x509.ExtensionReaderTest"/>
+        <method signature="LDAPv3DNFormatterTest.testFormat(java.io.File, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.LDAPv3DNFormatterTest@5d624da6]" name="testFormat" class="org.security.crypt.x509.LDAPv3DNFormatterTest"/>
+        <method signature="RDNSequenceIteratorTest.testIterator(java.io.File, [Lorg.security.crypt.x509.types.RelativeDistinguishedName;)[pri:0, instance:org.security.crypt.x509.RDNSequenceIteratorTest@614c5515]" name="testIterator" class="org.security.crypt.x509.RDNSequenceIteratorTest"/>
+        <method signature="RelativeDistinguishedNameTest.testToString(org.security.crypt.x509.types.RelativeDistinguishedName, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.RelativeDistinguishedNameTest@5f2050f6]" name="testToString" class="org.security.crypt.x509.types.RelativeDistinguishedNameTest"/>
+        <method signature="X509UtilsTest.testFindEntityCertificate([Ljava.lang.String;, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testFindEntityCertificate" class="org.security.crypt.x509.X509UtilsTest"/>
+        <method signature="X509UtilsTest.testGetSubjectNames(java.lang.String, [Lorg.security.crypt.x509.types.GeneralNameType;, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testGetSubjectNames" class="org.security.crypt.x509.X509UtilsTest"/>
+      </group> <!-- x509 -->
+      <group name="encodeHex">
+        <method signature="HexFilterOutputStreamTest.testEncodeHex()[pri:0, instance:org.security.crypt.io.HexFilterOutputStreamTest@6fb554cc]" name="testEncodeHex" class="org.security.crypt.io.HexFilterOutputStreamTest"/>
+      </group> <!-- encodeHex -->
+      <group name="decodeBase64">
+        <method signature="Base64FilterInputStreamTest.testDecodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterInputStreamTest@1e67b872]" name="testDecodeBase64" class="org.security.crypt.io.Base64FilterInputStreamTest"/>
+      </group> <!-- decodeBase64 -->
+      <group name="util">
+        <method signature="ConverterTest.testConvert(org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.util.ConverterTest@6be46e8f]" name="testConvert" class="org.security.crypt.util.ConverterTest"/>
+      </group> <!-- util -->
+      <group name="signature">
+        <method signature="SignatureAlgorithmTest.testClone(org.security.crypt.signature.SignatureAlgorithm)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testClone" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="SignatureAlgorithmTest.testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="SignatureAlgorithmTest.testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="SignatureAlgorithmTest.testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+      </group> <!-- signature -->
+      <group name="io">
+        <method signature="Base64FilterInputStreamTest.testDecodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterInputStreamTest@1e67b872]" name="testDecodeBase64" class="org.security.crypt.io.Base64FilterInputStreamTest"/>
+        <method signature="Base64FilterOutputStreamTest.testEncodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterOutputStreamTest@77b52d12]" name="testEncodeBase64" class="org.security.crypt.io.Base64FilterOutputStreamTest"/>
+        <method signature="HexFilterInputStreamTest.testDecodeHex()[pri:0, instance:org.security.crypt.io.HexFilterInputStreamTest@246ae04d]" name="testDecodeHex" class="org.security.crypt.io.HexFilterInputStreamTest"/>
+        <method signature="HexFilterOutputStreamTest.testEncodeHex()[pri:0, instance:org.security.crypt.io.HexFilterOutputStreamTest@6fb554cc]" name="testEncodeHex" class="org.security.crypt.io.HexFilterOutputStreamTest"/>
+      </group> <!-- io -->
+      <group name="digest">
+        <method signature="DigestAlgorithmTest.testClone(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testClone" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testDigestConvert(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestConvert" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testDigestStream(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestStream" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testHashCalculationAgainstReference(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testHashCalculationAgainstReference" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestCliTest.testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" class="org.security.crypt.digest.DigestCliTest"/>
+      </group> <!-- digest -->
+      <group name="decodeHex">
+        <method signature="HexFilterInputStreamTest.testDecodeHex()[pri:0, instance:org.security.crypt.io.HexFilterInputStreamTest@246ae04d]" name="testDecodeHex" class="org.security.crypt.io.HexFilterInputStreamTest"/>
+      </group> <!-- decodeHex -->
+      <group name="functest">
+        <method signature="AsymmetricAlgorithmTest.testAsymmetricAlgorithm(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testAsymmetricAlgorithm" class="org.security.crypt.asymmetric.AsymmetricAlgorithmTest"/>
+        <method signature="AsymmetricAlgorithmTest.testClone(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testClone" class="org.security.crypt.asymmetric.AsymmetricAlgorithmTest"/>
+        <method signature="AttributeTypeAndValueTest.testToString(org.security.crypt.x509.types.AttributeTypeAndValue, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.AttributeTypeAndValueTest@2ef9b8bc]" name="testToString" class="org.security.crypt.x509.types.AttributeTypeAndValueTest"/>
+        <method signature="Base64FilterInputStreamTest.testDecodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterInputStreamTest@1e67b872]" name="testDecodeBase64" class="org.security.crypt.io.Base64FilterInputStreamTest"/>
+        <method signature="Base64FilterOutputStreamTest.testEncodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterOutputStreamTest@77b52d12]" name="testEncodeBase64" class="org.security.crypt.io.Base64FilterOutputStreamTest"/>
+        <method signature="ConverterTest.testConvert(org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.util.ConverterTest@6be46e8f]" name="testConvert" class="org.security.crypt.util.ConverterTest"/>
+        <method signature="DNUtilsTest.testGetAttributeValue(java.io.File, org.security.crypt.x509.types.AttributeType, java.lang.String)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValue" class="org.security.crypt.x509.DNUtilsTest"/>
+        <method signature="DNUtilsTest.testGetAttributeValues(java.io.File, org.security.crypt.x509.types.AttributeType, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValues" class="org.security.crypt.x509.DNUtilsTest"/>
+        <method signature="DigestAlgorithmTest.testClone(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testClone" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testDigestConvert(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestConvert" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testDigestStream(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestStream" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="DigestAlgorithmTest.testHashCalculationAgainstReference(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testHashCalculationAgainstReference" class="org.security.crypt.digest.DigestAlgorithmTest"/>
+        <method signature="ExtensionReaderTest.testReadAll(java.io.File, java.util.Map)[pri:0, instance:org.security.crypt.x509.ExtensionReaderTest@2c6a3f77]" name="testReadAll" class="org.security.crypt.x509.ExtensionReaderTest"/>
+        <method signature="HexFilterInputStreamTest.testDecodeHex()[pri:0, instance:org.security.crypt.io.HexFilterInputStreamTest@246ae04d]" name="testDecodeHex" class="org.security.crypt.io.HexFilterInputStreamTest"/>
+        <method signature="HexFilterOutputStreamTest.testEncodeHex()[pri:0, instance:org.security.crypt.io.HexFilterOutputStreamTest@6fb554cc]" name="testEncodeHex" class="org.security.crypt.io.HexFilterOutputStreamTest"/>
+        <method signature="LDAPv3DNFormatterTest.testFormat(java.io.File, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.LDAPv3DNFormatterTest@5d624da6]" name="testFormat" class="org.security.crypt.x509.LDAPv3DNFormatterTest"/>
+        <method signature="PublicKeyUtilsTest.testIsKeyPair(java.security.PublicKey, java.security.PrivateKey, boolean)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testIsKeyPair" class="org.security.crypt.asymmetric.PublicKeyUtilsTest"/>
+        <method signature="PublicKeyUtilsTest.testLength(java.security.KeyPair, int, int)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testLength" class="org.security.crypt.asymmetric.PublicKeyUtilsTest"/>
+        <method signature="RDNSequenceIteratorTest.testIterator(java.io.File, [Lorg.security.crypt.x509.types.RelativeDistinguishedName;)[pri:0, instance:org.security.crypt.x509.RDNSequenceIteratorTest@614c5515]" name="testIterator" class="org.security.crypt.x509.RDNSequenceIteratorTest"/>
+        <method signature="RelativeDistinguishedNameTest.testToString(org.security.crypt.x509.types.RelativeDistinguishedName, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.RelativeDistinguishedNameTest@5f2050f6]" name="testToString" class="org.security.crypt.x509.types.RelativeDistinguishedNameTest"/>
+        <method signature="SignatureAlgorithmTest.testClone(org.security.crypt.signature.SignatureAlgorithm)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testClone" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="SignatureAlgorithmTest.testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="SignatureAlgorithmTest.testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="SignatureAlgorithmTest.testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" class="org.security.crypt.signature.SignatureAlgorithmTest"/>
+        <method signature="X509UtilsTest.testFindEntityCertificate([Ljava.lang.String;, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testFindEntityCertificate" class="org.security.crypt.x509.X509UtilsTest"/>
+        <method signature="X509UtilsTest.testGetSubjectNames(java.lang.String, [Lorg.security.crypt.x509.types.GeneralNameType;, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testGetSubjectNames" class="org.security.crypt.x509.X509UtilsTest"/>
+      </group> <!-- functest -->
+      <group name="asymmetric">
+        <method signature="AsymmetricAlgorithmTest.testAsymmetricAlgorithm(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testAsymmetricAlgorithm" class="org.security.crypt.asymmetric.AsymmetricAlgorithmTest"/>
+        <method signature="AsymmetricAlgorithmTest.testClone(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testClone" class="org.security.crypt.asymmetric.AsymmetricAlgorithmTest"/>
+        <method signature="AsymmetricCliTest.testAsymmetricCli(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricCliTest@5315b42e]" name="testAsymmetricCli" class="org.security.crypt.asymmetric.AsymmetricCliTest"/>
+        <method signature="PublicKeyUtilsTest.testIsKeyPair(java.security.PublicKey, java.security.PrivateKey, boolean)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testIsKeyPair" class="org.security.crypt.asymmetric.PublicKeyUtilsTest"/>
+        <method signature="PublicKeyUtilsTest.testLength(java.security.KeyPair, int, int)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testLength" class="org.security.crypt.asymmetric.PublicKeyUtilsTest"/>
+      </group> <!-- asymmetric -->
+    </groups>
+    <test name="Command line test" duration-ms="21052" started-at="2014-09-01T16:49:05Z" finished-at="2014-09-01T16:49:26Z">
+      <class name="org.security.crypt.signature.SignatureAlgorithmTest">
+        <test-method status="FAIL" signature="testClone(org.security.crypt.signature.SignatureAlgorithm)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testClone" duration-ms="0" started-at="2014-09-01T22:19:17Z" data-provider="testclone" finished-at="2014-09-01T22:19:17Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[org.security.crypt.CryptException: Error generatig 512-bit EC key]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: org.security.crypt.CryptException: Error generatig 512-bit EC key
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.security.crypt.CryptException: Error generatig 512-bit EC key
+	at org.security.crypt.asymmetric.PublicKeyUtils.generate(PublicKeyUtils.java:149)
+	at org.security.crypt.asymmetric.PublicKeyUtils.generate(PublicKeyUtils.java:116)
+	at org.security.crypt.signature.SignatureAlgorithmTest.createTestDataForClone(SignatureAlgorithmTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
+	... 30 more
+Caused by: java.security.InvalidParameterException: unknown key size.
+	at org.bouncycastle.jce.provider.asymmetric.ec.KeyPairGenerator$EC.initialize(Unknown Source)
+	at org.security.crypt.asymmetric.PublicKeyUtils.generate(PublicKeyUtils.java:146)
+	... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClone -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="2" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@79d94571]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="1" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@4dd02341]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@5d12a356]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="2" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@3212a8d7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@66ac5762]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="3" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@7a1a3478]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@31bcf236]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="5" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@495b0487]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="1" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@55dfcc6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@517d4a0d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="5" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@222eb8aa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@3a12c404]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="5" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@93cf163]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@22d7b4f8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="23" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECDSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@1852a3ff]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testRandomizedSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testRandomizedSignVerify" duration-ms="60" started-at="2014-09-01T22:19:20Z" data-provider="testdata" finished-at="2014-09-01T22:19:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECDSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@7203c7ff]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@2c1156a7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomizedSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="3" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@25bfcafd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="1" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@4b6690c0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@4f1bfe23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="3" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@46268f08]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@512535ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="3" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@2a76840c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@61a88b8c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="5" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@71454b9d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="1" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@eda25e5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@3f270e0a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="5" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@7cf6a5f9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@7241a47d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="6" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@623e088f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@77258e59]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="26" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECDSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@39fcbef6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerify(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerify" duration-ms="61" started-at="2014-09-01T22:19:22Z" data-provider="testdata" finished-at="2014-09-01T22:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECDSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@66565121]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@7e3181aa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerify -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="21" started-at="2014-09-01T22:19:25Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@2fc6f97f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="20" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@3d2ee678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@8dbfffb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="95" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@6179e425]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@5dd1c9f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="45" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@35f26e72]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@6187d1f5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="39" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@2d6764b2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="25" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@67304a40]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@63798ca7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="27" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@49c6c24f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@79c7532f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="286" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@6fe1b4fb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@e54303]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="40" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECDSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@79351f41]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+        <test-method status="PASS" signature="testSignVerifyOnStream(org.security.crypt.signature.SignatureAlgorithm, java.security.KeyPair, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.signature.SignatureAlgorithmTest@60addb54]" name="testSignVerifyOnStream" duration-ms="121" started-at="2014-09-01T22:19:26Z" data-provider="testdata" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECDSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@1c32386d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@2df6226d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignVerifyOnStream -->
+      </class> <!-- org.security.crypt.signature.SignatureAlgorithmTest -->
+      <class name="org.security.crypt.asymmetric.PublicKeyUtilsTest">
+        <test-method status="PASS" signature="testIsKeyPair(java.security.PublicKey, java.security.PrivateKey, boolean)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testIsKeyPair" duration-ms="5" started-at="2014-09-01T22:19:16Z" data-provider="keys" finished-at="2014-09-01T22:19:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA Public Key
+            y: 7f0c090670b312ced3a20c832c2ef4a30af8e0bc7a9f7290e9291e357b5a589a861f859638fa38f73b41a9b103587c89d22197d15ce46082937a66e54b9c637774eae2b0c2c0e3437a98f371cf47d980a624ab97a8e0f35aa8bdf950e11b46ed221b0e86b98828fd5dc9b6c5dcb8e9f60c0fd81806a123c102c44fa4bf799acf
+]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.bouncycastle.jce.provider.JDKDSAPrivateKey@def73fdc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsKeyPair -->
+        <test-method status="PASS" signature="testIsKeyPair(java.security.PublicKey, java.security.PrivateKey, boolean)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testIsKeyPair" duration-ms="36" started-at="2014-09-01T22:19:16Z" data-provider="keys" finished-at="2014-09-01T22:19:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EC Public Key
+            X: 5fdf94922b3e10c146e11ae94bc24d0a113c13a17c770013ed486f136b1d6bda
+            Y: 8c2d263b778a509d2d32e73ee6bd82265d78708a52dc5cb38217edee366bbcd1
+]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EC Private Key
+             S: f10dee56b75d656ebc79aa99db09ae369d5760a622eed1470c4ff44a85aee378
+]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsKeyPair -->
+        <test-method status="PASS" signature="testIsKeyPair(java.security.PublicKey, java.security.PrivateKey, boolean)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testIsKeyPair" duration-ms="9" started-at="2014-09-01T22:19:16Z" data-provider="keys" finished-at="2014-09-01T22:19:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA Public Key
+            modulus: d49e8bd624bcb87b12b1e10f9fadc5bd2bfe43cb30a6f418f47b732f29a3924e1028ba4ec6b8be00c2540a1a164fa9680a419dc8500777431da5d829cf9a220d96fef46a92021cfda037f692a71fda588f5eba95dea850b09ac5fddc487c42d832a91a9345f681e9a5c57ac62a1b8202483ee7a0caf32b44aff2d0d305f1a74f
+    public exponent: 10001
+]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RSA Private CRT Key
+            modulus: d49e8bd624bcb87b12b1e10f9fadc5bd2bfe43cb30a6f418f47b732f29a3924e1028ba4ec6b8be00c2540a1a164fa9680a419dc8500777431da5d829cf9a220d96fef46a92021cfda037f692a71fda588f5eba95dea850b09ac5fddc487c42d832a91a9345f681e9a5c57ac62a1b8202483ee7a0caf32b44aff2d0d305f1a74f
+    public exponent: 10001
+   private exponent: 93f95fe302a061582e53a40a069c9f11204c0e8c9c68a55bb4d331fff1dfc8541204f65d1b0aba19b7255bfe79e6a9452256366491e61047a29ba88cb8d251bd94c0495584b31461db5e132a8d47de789a897bb54683689747da218f57b1c45000092860bc834f25c930ce15c9857a80b309a04071b5edd7005d851f2298afd9
+             primeP: ecd3338eefa6fe8537b469f96069132a17b0a5614f6aabe972855631f43bebbba3c9e2b54a6cd0cc712a89be9f461e722c46e403988f9bc261b5fba79e4d09c5
+             primeQ: e5d59ee41ed1c3d92d8ab3cf9f0e229d73de56dbb2c555d37c5e14757a8a595ba1a6adeb53141e8b433d634722de4d3d83ff7e83b898e511b10ea339678b0203
+     primeExponentP: 613fd94c38dd3a673a18bbebcbcb5a334ec71b227a9a333e09e8f71c4c4ecede9ec3a87509bae5830e75895addcccd73d4fac767329ec6376c286ecec6129c9
+     primeExponentQ: 8adf13bdc4bd7c780a6387984903f2786edd86600359e72cfd359f69089cf5b73f2a8665ed71f7aeaff734b873e21c8bb1e93bd97d3dad138e8748aad3dc935f
+     crtCoefficient: 9296f653398a83b8088a53af5c70832caeba30cca9655b490f37057921f46a5fdddcf5b172c99e6365b3476d0425610be6ed382e1e461da1885ba96d992a5360
+]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsKeyPair -->
+        <test-method status="PASS" signature="testIsKeyPair(java.security.PublicKey, java.security.PrivateKey, boolean)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testIsKeyPair" duration-ms="0" started-at="2014-09-01T22:19:16Z" data-provider="keys" finished-at="2014-09-01T22:19:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DSA Public Key
+            y: 7f0c090670b312ced3a20c832c2ef4a30af8e0bc7a9f7290e9291e357b5a589a861f859638fa38f73b41a9b103587c89d22197d15ce46082937a66e54b9c637774eae2b0c2c0e3437a98f371cf47d980a624ab97a8e0f35aa8bdf950e11b46ed221b0e86b98828fd5dc9b6c5dcb8e9f60c0fd81806a123c102c44fa4bf799acf
+]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RSA Private CRT Key
+            modulus: d49e8bd624bcb87b12b1e10f9fadc5bd2bfe43cb30a6f418f47b732f29a3924e1028ba4ec6b8be00c2540a1a164fa9680a419dc8500777431da5d829cf9a220d96fef46a92021cfda037f692a71fda588f5eba95dea850b09ac5fddc487c42d832a91a9345f681e9a5c57ac62a1b8202483ee7a0caf32b44aff2d0d305f1a74f
+    public exponent: 10001
+   private exponent: 93f95fe302a061582e53a40a069c9f11204c0e8c9c68a55bb4d331fff1dfc8541204f65d1b0aba19b7255bfe79e6a9452256366491e61047a29ba88cb8d251bd94c0495584b31461db5e132a8d47de789a897bb54683689747da218f57b1c45000092860bc834f25c930ce15c9857a80b309a04071b5edd7005d851f2298afd9
+             primeP: ecd3338eefa6fe8537b469f96069132a17b0a5614f6aabe972855631f43bebbba3c9e2b54a6cd0cc712a89be9f461e722c46e403988f9bc261b5fba79e4d09c5
+             primeQ: e5d59ee41ed1c3d92d8ab3cf9f0e229d73de56dbb2c555d37c5e14757a8a595ba1a6adeb53141e8b433d634722de4d3d83ff7e83b898e511b10ea339678b0203
+     primeExponentP: 613fd94c38dd3a673a18bbebcbcb5a334ec71b227a9a333e09e8f71c4c4ecede9ec3a87509bae5830e75895addcccd73d4fac767329ec6376c286ecec6129c9
+     primeExponentQ: 8adf13bdc4bd7c780a6387984903f2786edd86600359e72cfd359f69089cf5b73f2a8665ed71f7aeaff734b873e21c8bb1e93bd97d3dad138e8748aad3dc935f
+     crtCoefficient: 9296f653398a83b8088a53af5c70832caeba30cca9655b490f37057921f46a5fdddcf5b172c99e6365b3476d0425610be6ed382e1e461da1885ba96d992a5360
+]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsKeyPair -->
+        <test-method status="PASS" signature="testLength(java.security.KeyPair, int, int)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testLength" duration-ms="1" started-at="2014-09-01T22:19:17Z" data-provider="keypairs" finished-at="2014-09-01T22:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java.security.KeyPair@495fac5f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1152]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1152]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLength -->
+        <test-method status="PASS" signature="testLength(java.security.KeyPair, int, int)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testLength" duration-ms="0" started-at="2014-09-01T22:19:17Z" data-provider="keypairs" finished-at="2014-09-01T22:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java.security.KeyPair@635572a7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[384]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[384]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLength -->
+        <test-method status="PASS" signature="testLength(java.security.KeyPair, int, int)[pri:0, instance:org.security.crypt.asymmetric.PublicKeyUtilsTest@68837a77]" name="testLength" duration-ms="0" started-at="2014-09-01T22:19:17Z" data-provider="keypairs" finished-at="2014-09-01T22:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java.security.KeyPair@76012793]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[160]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLength -->
+      </class> <!-- org.security.crypt.asymmetric.PublicKeyUtilsTest -->
+      <class name="org.security.crypt.io.HexFilterOutputStreamTest">
+        <test-method status="PASS" signature="testEncodeHex()[pri:0, instance:org.security.crypt.io.HexFilterOutputStreamTest@6fb554cc]" name="testEncodeHex" duration-ms="70" started-at="2014-09-01T22:19:12Z" finished-at="2014-09-01T22:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEncodeHex -->
+      </class> <!-- org.security.crypt.io.HexFilterOutputStreamTest -->
+      <class name="org.security.crypt.x509.ExtensionReaderTest">
+        <test-method status="PASS" signature="testReadAll(java.io.File, java.util.Map)[pri:0, instance:org.security.crypt.x509.ExtensionReaderTest@2c6a3f77]" name="testReadAll" duration-ms="12" started-at="2014-09-01T22:19:12Z" data-provider="certdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/marvin.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{AuthorityKeyIdentifier=B2:25:DC:8A:4D:E6:55:53:DC:D5:1A:65:11:D0:73:98:AF:9E:7F:07, ExtendedKeyUsage=[EmailProtection, ClientAuth, SmartCardLogin], KeyUsage=[DigitalSignature, NonRepudiation], BasicConstraints=CA:false, CRLDistributionPoints=[[http://balamood2.cc.vt.edu:8080/ejbca/publicweb/webdist/certdist?cmd=crl&issuer=CN=DEV Virginia Tech User CA,O=Virginia Polytechnic Institute and State University,DC=vt,DC=edu,C=US]], SubjectKeyIdentifier=FF:39:94:8A:03:97:04:D2:34:8E:79:0A:F9:5A:36:A2:EF:9B:FC:07, CertificatePolicies=[1.3.6.1.4.1.6760.5.2.2.2.1, 1.3.6.1.4.1.6760.5.2.2.1.1, 1.3.6.1.4.1.6760.5.2.2.4.1:[CPS:http://www.pki.vt.edu/vtc1sca/cps/], 1.3.6.1.4.1.6760.5.2.2.3.1], SubjectAlternativeName=[serac@vt.edu]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadAll -->
+        <test-method status="PASS" signature="testReadAll(java.io.File, java.util.Map)[pri:0, instance:org.security.crypt.x509.ExtensionReaderTest@2c6a3f77]" name="testReadAll" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="certdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/thawte-premium-server-ca-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{BasicConstraints=CA:true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadAll -->
+        <test-method status="PASS" signature="testReadAll(java.io.File, java.util.Map)[pri:0, instance:org.security.crypt.x509.ExtensionReaderTest@2c6a3f77]" name="testReadAll" duration-ms="13" started-at="2014-09-01T22:19:12Z" data-provider="certdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/login.live.com-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{AuthorityKeyIdentifier=FC:8A:50:BA:9E:B9:25:5A:7B:55:85:4F:95:00:63:8F:E9:58:6B:43, ExtendedKeyUsage=[ClientAuth, ServerAuth], KeyUsage=[DigitalSignature, KeyEncipherment], AuthorityInformationAccess=[OCSP:http://EVSecure-ocsp.verisign.com, CAIssuers:http://EVSecure-aia.verisign.com/EVSecure2006.cer], BasicConstraints=CA:false, CRLDistributionPoints=[[http://EVSecure-crl.verisign.com/EVSecure2006.crl]], SubjectKeyIdentifier=31:AE:F1:7C:98:67:E9:1F:19:69:A2:A7:84:1E:67:5C:AA:C3:6B:75, CertificatePolicies=[2.16.840.1.113733.1.7.23.6:[CPS:https://www.verisign.com/rpa]]}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadAll -->
+      </class> <!-- org.security.crypt.x509.ExtensionReaderTest -->
+      <class name="org.security.crypt.util.ConverterTest">
+        <test-method status="PASS" signature="testConvert(org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.util.ConverterTest@6be46e8f]" name="testConvert" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@95e33cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConvert -->
+        <test-method status="PASS" signature="testConvert(org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.util.ConverterTest@6be46e8f]" name="testConvert" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@1e44b638]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConvert -->
+        <test-method status="PASS" signature="testConvert(org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.util.ConverterTest@6be46e8f]" name="testConvert" duration-ms="2" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@babafc2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConvert -->
+      </class> <!-- org.security.crypt.util.ConverterTest -->
+      <class name="org.security.crypt.io.HexFilterInputStreamTest">
+        <test-method status="PASS" signature="testDecodeHex()[pri:0, instance:org.security.crypt.io.HexFilterInputStreamTest@246ae04d]" name="testDecodeHex" duration-ms="89" started-at="2014-09-01T22:19:12Z" finished-at="2014-09-01T22:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecodeHex -->
+      </class> <!-- org.security.crypt.io.HexFilterInputStreamTest -->
+      <class name="org.security.crypt.io.Base64FilterInputStreamTest">
+        <test-method status="PASS" signature="testDecodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterInputStreamTest@1e67b872]" name="testDecodeBase64" duration-ms="138" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecodeBase64 -->
+        <test-method status="PASS" signature="testDecodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterInputStreamTest@1e67b872]" name="testDecodeBase64" duration-ms="61" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[64]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecodeBase64 -->
+        <test-method status="PASS" signature="testDecodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterInputStreamTest@1e67b872]" name="testDecodeBase64" duration-ms="37" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[76]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecodeBase64 -->
+      </class> <!-- org.security.crypt.io.Base64FilterInputStreamTest -->
+      <class name="org.security.crypt.digest.DigestAlgorithmTest">
+        <test-method status="FAIL" signature="testClone(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testClone" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testclone" finished-at="2014-09-01T22:19:11Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.IllegalStateException: No random provider available.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.IllegalStateException: No random provider available.
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:161)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:429)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: No random provider available.
+	at org.security.crypt.AbstractAlgorithm.getRandomData(AbstractAlgorithm.java:48)
+	at org.security.crypt.digest.DigestAlgorithm.getRandomSalt(DigestAlgorithm.java:118)
+	at org.security.crypt.digest.DigestAlgorithmTest.createTestDataForClone(DigestAlgorithmTest.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:135)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClone -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="2" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@4758820d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@74eb909f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@28ec166e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD128]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD128]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@2eee3069]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD160]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD160]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD256]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD256]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@5629510]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD320]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RIPEMD320]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@4df5bcb4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="2" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@12c7a01b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-256]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-256]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@13d9b21f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-384]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-384]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@2826f61]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-512]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-512]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@62727399]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tiger]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tiger]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@4d9ac0b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="2" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Whirlpool]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigest(org.security.crypt.digest.DigestAlgorithm, [B)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigest" duration-ms="3" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Whirlpool]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[B@130dca52]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigest -->
+        <test-method status="PASS" signature="testDigestConvert(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestConvert" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@2654635]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestConvert -->
+        <test-method status="PASS" signature="testDigestConvert(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestConvert" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@737a135b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestConvert -->
+        <test-method status="PASS" signature="testDigestConvert(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestConvert" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@687ef2e0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestConvert -->
+        <test-method status="PASS" signature="testDigestConvert(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestConvert" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@15dcfae7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestConvert -->
+        <test-method status="PASS" signature="testDigestStream(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestStream" duration-ms="16" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@d41f816]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestStream -->
+        <test-method status="PASS" signature="testDigestStream(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestStream" duration-ms="17" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@7a55af6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestStream -->
+        <test-method status="PASS" signature="testDigestStream(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestStream" duration-ms="73" started-at="2014-09-01T22:19:11Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.HexConverter@558bdf1f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestStream -->
+        <test-method status="PASS" signature="testDigestStream(org.security.crypt.digest.DigestAlgorithm, org.security.crypt.util.Converter)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testDigestStream" duration-ms="62" started-at="2014-09-01T22:19:12Z" data-provider="testdataconv" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.security.crypt.util.Base64Converter@6c2c1385]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestStream -->
+        <test-method status="PASS" signature="testHashCalculationAgainstReference(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testHashCalculationAgainstReference" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdataref" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MD5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHashCalculationAgainstReference -->
+        <test-method status="PASS" signature="testHashCalculationAgainstReference(org.security.crypt.digest.DigestAlgorithm)[pri:0, instance:org.security.crypt.digest.DigestAlgorithmTest@3f2a3a5]" name="testHashCalculationAgainstReference" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdataref" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SHA-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHashCalculationAgainstReference -->
+      </class> <!-- org.security.crypt.digest.DigestAlgorithmTest -->
+      <class name="org.security.crypt.asymmetric.AsymmetricAlgorithmTest">
+        <test-method status="PASS" signature="testAsymmetricAlgorithm(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testAsymmetricAlgorithm" duration-ms="21" started-at="2014-09-01T22:19:06Z" data-provider="testdata" finished-at="2014-09-01T22:19:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA/NONE/OAEPPadding]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@b1712f3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAsymmetricAlgorithm -->
+        <test-method status="PASS" signature="testAsymmetricAlgorithm(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testAsymmetricAlgorithm" duration-ms="22" started-at="2014-09-01T22:19:06Z" data-provider="testdata" finished-at="2014-09-01T22:19:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA/NONE/OAEPPadding]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@6986bbaf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAsymmetricAlgorithm -->
+        <test-method status="PASS" signature="testClone(org.security.crypt.asymmetric.AsymmetricAlgorithm, java.security.KeyPair)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricAlgorithmTest@62043840]" name="testClone" duration-ms="25" started-at="2014-09-01T22:19:07Z" data-provider="testclone" finished-at="2014-09-01T22:19:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA/NONE/OAEPPadding]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java.security.KeyPair@4879dfad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClone -->
+      </class> <!-- org.security.crypt.asymmetric.AsymmetricAlgorithmTest -->
+      <class name="org.security.crypt.x509.X509UtilsTest">
+        <test-method status="PASS" signature="testFindEntityCertificate([Ljava.lang.String;, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testFindEntityCertificate" duration-ms="71" started-at="2014-09-01T22:19:26Z" data-provider="entity-certs" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3da05287]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[entity-key.pem]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[entity-cert.pem]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindEntityCertificate -->
+        <test-method status="PASS" signature="testFindEntityCertificate([Ljava.lang.String;, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testFindEntityCertificate" duration-ms="66" started-at="2014-09-01T22:19:26Z" data-provider="entity-certs" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1e636ea3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[entity-key.pem]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindEntityCertificate -->
+        <test-method status="PASS" signature="testGetSubjectNames(java.lang.String, [Lorg.security.crypt.x509.types.GeneralNameType;, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testGetSubjectNames" duration-ms="2" started-at="2014-09-01T22:19:26Z" data-provider="subject-names" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[marvin.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Lorg.security.crypt.x509.types.GeneralNameType;@497486b3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@63f8276e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSubjectNames -->
+        <test-method status="PASS" signature="testGetSubjectNames(java.lang.String, [Lorg.security.crypt.x509.types.GeneralNameType;, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.X509UtilsTest@1324409e]" name="testGetSubjectNames" duration-ms="1" started-at="2014-09-01T22:19:26Z" data-provider="subject-names" finished-at="2014-09-01T22:19:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[marvin.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Lorg.security.crypt.x509.types.GeneralNameType;@75f95314]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6127a7e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSubjectNames -->
+      </class> <!-- org.security.crypt.x509.X509UtilsTest -->
+      <class name="org.security.crypt.x509.types.AttributeTypeAndValueTest">
+        <test-method status="PASS" signature="testToString(org.security.crypt.x509.types.AttributeTypeAndValue, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.AttributeTypeAndValueTest@2ef9b8bc]" name="testToString" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="atvdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CN=Marvin S. Addison]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CN=Marvin S. Addison]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+        <test-method status="PASS" signature="testToString(org.security.crypt.x509.types.AttributeTypeAndValue, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.AttributeTypeAndValueTest@2ef9b8bc]" name="testToString" duration-ms="1" started-at="2014-09-01T22:19:11Z" data-provider="atvdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[O=Sue\, Grabbit and Runn]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[O=Sue\, Grabbit and Runn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+        <test-method status="PASS" signature="testToString(org.security.crypt.x509.types.AttributeTypeAndValue, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.AttributeTypeAndValueTest@2ef9b8bc]" name="testToString" duration-ms="0" started-at="2014-09-01T22:19:11Z" data-provider="atvdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.1.4.1.5=\ Apple\, Cherry\, and Mixed Berry!\ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.1.4.1.5=\ Apple\, Cherry\, and Mixed Berry!\ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+      </class> <!-- org.security.crypt.x509.types.AttributeTypeAndValueTest -->
+      <class name="org.security.crypt.digest.DigestCliTest">
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="2" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg MD4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg MD5 -encoding base64 -salt D3ADF00D]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="3" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg MD5 -encoding base64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jkdiaM9v/g6hNQSr5hnmgQ==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg RIPEMD128 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg RIPEMD160 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg RIPEMD256 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="0" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg RIPEMD320 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA1 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fa46b18852c72fe87b8954b987b897074c211131]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA-1 -encoding base64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+kaxiFLHL+h7iVS5h7iXB0whETE=]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA256 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[949365318ff52c4d326ff3dd806cb29bd620e458c6987635f3ba0312868d2649]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA-256 -encoding base64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lJNlMY/1LE0yb/PdgGyym9Yg5FjGmHY187oDEoaNJkk=]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA384 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3ed9a131a23adb1db8837d925a04f16044df637891baf9fa178daee1d9216a84231750e9d69a37ac462cdc7abf1cc032]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="0" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA-384 -encoding base64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PtmhMaI62x24g32SWgTxYETfY3iRuvn6F42u4dkhaoQjF1Dp1po3rEYs3Hq/HMAy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="0" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA512 -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4d0b1e5dccd9e8998bf08a9d0ea8b7c139643ae5a5b937219eaa47dd8237b987b4dc947b2e9001b3a5f2887a62933d4e6d79865663e6e7e5bd140f4e6079f76f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg SHA-512 -encoding base64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TQseXczZ6JmL8IqdDqi3wTlkOuWluTchnqpH3YI3uYe03JR7LpABs6XyiHpikz1ObXmGVmPm5+W9FA9OYHn3bw==]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg Tiger -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ff140eab46ba272631f5b02e6de52aaec6b9a2b836a5dc13]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+        <test-method status="PASS" signature="testDigestCli(java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.digest.DigestCliTest@2d554825]" name="testDigestCli" duration-ms="1" started-at="2014-09-01T22:19:12Z" data-provider="testdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-alg Whirlpool -encoding hex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b7a85efb1e0dce3805f30c95bb5e4595d2602bf5adc8743d39a293f726d851f9fd31c59dfd7d2175018c5f4b38747d9131c2a825206aa6d29dbb5cc0be2f0581]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDigestCli -->
+      </class> <!-- org.security.crypt.digest.DigestCliTest -->
+      <class name="org.security.crypt.asymmetric.AsymmetricCliTest">
+        <test-method status="PASS" signature="testAsymmetricCli(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricCliTest@5315b42e]" name="testAsymmetricCli" duration-ms="266" started-at="2014-09-01T22:19:07Z" data-provider="testdata" finished-at="2014-09-01T22:19:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rsa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1536]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAsymmetricCli -->
+        <test-method status="PASS" signature="testAsymmetricCli(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricCliTest@5315b42e]" name="testAsymmetricCli" duration-ms="988" started-at="2014-09-01T22:19:07Z" data-provider="testdata" finished-at="2014-09-01T22:19:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[base64]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2048]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAsymmetricCli -->
+        <test-method status="PASS" signature="testAsymmetricCli(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:org.security.crypt.asymmetric.AsymmetricCliTest@5315b42e]" name="testAsymmetricCli" duration-ms="2525" started-at="2014-09-01T22:19:08Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RSA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hex]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3072]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAsymmetricCli -->
+      </class> <!-- org.security.crypt.asymmetric.AsymmetricCliTest -->
+      <class name="org.security.crypt.x509.DNUtilsTest">
+        <test-method status="PASS" signature="testGetAttributeValue(java.io.File, org.security.crypt.x509.types.AttributeType, java.lang.String)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValue" duration-ms="26" started-at="2014-09-01T22:19:11Z" data-provider="singlevaluedata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/serac-dev-test-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DomainComponent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAttributeValue -->
+        <test-method status="PASS" signature="testGetAttributeValue(java.io.File, org.security.crypt.x509.types.AttributeType, java.lang.String)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValue" duration-ms="10" started-at="2014-09-01T22:19:11Z" data-provider="singlevaluedata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/glider.cc.vt.edu.crt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CommonName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[glider.cc.vt.edu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAttributeValue -->
+        <test-method status="PASS" signature="testGetAttributeValue(java.io.File, org.security.crypt.x509.types.AttributeType, java.lang.String)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValue" duration-ms="2" started-at="2014-09-01T22:19:11Z" data-provider="singlevaluedata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/thawte-premium-server-ca-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EmailAddress]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[premium-server@thawte.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAttributeValue -->
+        <test-method status="PASS" signature="testGetAttributeValues(java.io.File, org.security.crypt.x509.types.AttributeType, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValues" duration-ms="3" started-at="2014-09-01T22:19:11Z" data-provider="multivaluesdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/serac-dev-test-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DomainComponent]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@115667d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAttributeValues -->
+        <test-method status="PASS" signature="testGetAttributeValues(java.io.File, org.security.crypt.x509.types.AttributeType, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValues" duration-ms="3" started-at="2014-09-01T22:19:11Z" data-provider="multivaluesdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/glider.cc.vt.edu.crt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SerialNumber]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@736caf7a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAttributeValues -->
+        <test-method status="PASS" signature="testGetAttributeValues(java.io.File, org.security.crypt.x509.types.AttributeType, [Ljava.lang.String;)[pri:0, instance:org.security.crypt.x509.DNUtilsTest@4cb2c100]" name="testGetAttributeValues" duration-ms="3" started-at="2014-09-01T22:19:11Z" data-provider="multivaluesdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/glider.cc.vt.edu.crt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OrganizationalUnitName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4ce7fffa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAttributeValues -->
+      </class> <!-- org.security.crypt.x509.DNUtilsTest -->
+      <class name="org.security.crypt.x509.types.RelativeDistinguishedNameTest">
+        <test-method status="PASS" signature="testToString(org.security.crypt.x509.types.RelativeDistinguishedName, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.RelativeDistinguishedNameTest@5f2050f6]" name="testToString" duration-ms="1" started-at="2014-09-01T22:19:17Z" data-provider="rdndata" finished-at="2014-09-01T22:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DC=vt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DC=vt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+        <test-method status="PASS" signature="testToString(org.security.crypt.x509.types.RelativeDistinguishedName, java.lang.String)[pri:0, instance:org.security.crypt.x509.types.RelativeDistinguishedNameTest@5f2050f6]" name="testToString" duration-ms="0" started-at="2014-09-01T22:19:17Z" data-provider="rdndata" finished-at="2014-09-01T22:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OU=Sales+CN=J. Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[OU=Sales+CN=J. Smith]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+      </class> <!-- org.security.crypt.x509.types.RelativeDistinguishedNameTest -->
+      <class name="org.security.crypt.io.Base64FilterOutputStreamTest">
+        <test-method status="PASS" signature="testEncodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterOutputStreamTest@77b52d12]" name="testEncodeBase64" duration-ms="70" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEncodeBase64 -->
+        <test-method status="PASS" signature="testEncodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterOutputStreamTest@77b52d12]" name="testEncodeBase64" duration-ms="94" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[64]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEncodeBase64 -->
+        <test-method status="PASS" signature="testEncodeBase64(java.lang.Integer)[pri:0, instance:org.security.crypt.io.Base64FilterOutputStreamTest@77b52d12]" name="testEncodeBase64" duration-ms="30" started-at="2014-09-01T22:19:11Z" data-provider="testdata" finished-at="2014-09-01T22:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[76]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEncodeBase64 -->
+      </class> <!-- org.security.crypt.io.Base64FilterOutputStreamTest -->
+      <class name="org.security.crypt.x509.LDAPv3DNFormatterTest">
+        <test-method status="PASS" signature="testFormat(java.io.File, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.LDAPv3DNFormatterTest@5d624da6]" name="testFormat" duration-ms="3" started-at="2014-09-01T22:19:12Z" data-provider="certdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/serac-dev-test-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C=US,DC=vt,DC=edu,O=Virginia Polytechnic Institute and State University,CN=Marvin S Addison,UID=1145718]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SERIALNUMBER=12,CN=DEV Virginia Tech Class 1 Server CA,O=Virginia Polytechnic Institute and State University,C=US,DC=vt,DC=edu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormat -->
+        <test-method status="PASS" signature="testFormat(java.io.File, java.lang.String, java.lang.String)[pri:0, instance:org.security.crypt.x509.LDAPv3DNFormatterTest@5d624da6]" name="testFormat" duration-ms="6" started-at="2014-09-01T22:19:12Z" data-provider="certdata" finished-at="2014-09-01T22:19:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/glider.cc.vt.edu.crt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C=US,DC=edu,DC=vt,ST=Virginia,L=Blacksburg,O=Virginia Polytechnic Institute and State University,OU=Middleware-Client,OU=SETI,SERIALNUMBER=1248110657961,CN=glider.cc.vt.edu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CN=Virginia Tech Middleware CA,O=Virginia Polytechnic Institute and State University,C=US,DC=vt,DC=edu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormat -->
+      </class> <!-- org.security.crypt.x509.LDAPv3DNFormatterTest -->
+      <class name="org.security.crypt.x509.RDNSequenceIteratorTest">
+        <test-method status="PASS" signature="testIterator(java.io.File, [Lorg.security.crypt.x509.types.RelativeDistinguishedName;)[pri:0, instance:org.security.crypt.x509.RDNSequenceIteratorTest@614c5515]" name="testIterator" duration-ms="2" started-at="2014-09-01T22:19:17Z" data-provider="rdndata" finished-at="2014-09-01T22:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/test/resources/x509/serac-dev-test-cert.pem]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Lorg.security.crypt.x509.types.RelativeDistinguishedName;@6bbe2511]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIterator -->
+      </class> <!-- org.security.crypt.x509.RDNSequenceIteratorTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
